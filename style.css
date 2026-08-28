@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://rollingstone.com.br/wp-content/uploads/2025/04/tron-ares-ganha-primeiro-trailer-e-confirma-data-de-estreia-assista_2e091103344.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+    min-height: 100vh;
+    font-family: "Roboto Slab", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+h3{
+    font-size: 20px;
+}
+
+.title {
+    font-size: calc(17px + 3vw);
+    color: rgb(189, 12, 12);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Black Ops One", system-ui;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: calc(10px + 1vw);
+    margin-top: 10px;
+}
+
+.countdown {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button {
+    color: rgb(218, 214, 214);
+    font-style: italic;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: solid 2px rgb(189, 189, 189);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    border: solid 2px rgb(184, 56, 56);
+    color: brown;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+    background: linear-gradient(135deg, #991212, #af1a1a);
+    border-radius: 50px;
+    width: 90vw;
+    max-width: 900px;
+    height: 60px;
+    margin: 5px 20px auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+.nav:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(119, 7, 7, 0.267);
+    color: #bb1004;
+    transform: scale(1.05);
+}
