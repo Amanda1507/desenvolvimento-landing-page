@@ -1,101 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d28dcb6894.js" crossorigin="anonymous"></script>
     <title>Detalhes Lancamento</title>
-    <script src="evento.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="evento.css">
 </head>
+
 <body>
+    <div class="filme">
     <div class="navContainer">
         <ul class="nav">
             <li class="tron">
                 <img src="https://image.tmdb.org/t/p/original/9D4TMtxUjYPXqQw4EnuJPmKzucp.png" alt="">
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="evento.html">Acompanhe o Evento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Entre em contato</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evento.html">Sobre o Evento</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Contador</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entre em contato</a>
+            </li>
+            <button>
+                <span class="front text"> Cadastre - se </span>
+            </button>
         </ul>
+    </div>
 
-        <div class="section">
+    <div class="section">
+        <div class="poster">
             <div class="caixa-cortada">
-                <img src="https://upload.wikimedia.org/wikipedia/pt/2/2e/Tron_ares_poster.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="" class="poster">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/2/2e/Tron_ares_poster.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
+                    alt="" class="poster">
             </div>
-            
-            <div class="sinopse">
+        </div>
+
+        <div class="sinopse">
 
             <h2>EM BREVE</h2>
             <img class="logo" src="https://image.tmdb.org/t/p/original/7UspqHHaW6fGoWsjV7w32GFxuft.png" alt="">
-            <h2>09 DE OUTUBRO DE 2026</h2>
-            <h3>SOMENTE NOS CINEMAS</h3>
+            <h4>09 DE OUTUBRO DE 2026</h4>
+            <h2>SOMENTE NOS CINEMAS</h2>
 
-            <p>TRON: Ares acompanha um programa altamente sofisticado que é enviado do mundo digital para o mundo real em uam missão perigosa, marcando o primeiro encontro da humanidade com seres de intelig~encia artificial.</p>
-            <button class="teaser"><i class="fa-solid fa-play"></i>
-                ASSITIR AO TEASER</button>
+            <p>TRON: ARES acompanha um programa de inteligência avançada chamado Ares é enviado do mundo digital para o mundo
+                real, em uma missão que pode mudar para sempre a relação entre humanos e tecnologia. Ao experimentar
+                pela primeira vez uma realidade que não foi criada para ele, Ares começa a questionar sua própria
+                existência e os limites de sua programação.
+
+                Em meio a perseguições, conflitos e uma tecnologia cada vez mais poderosa, humanos e programas se
+                encontram em uma disputa que ameaça ultrapassar as fronteiras dos dois mundos. Agora, Ares precisará
+                descobrir se é apenas uma criação programada para cumprir uma missão — ou se pode escolher o próprio
+                destino.</p>
+
+            <a href="https://youtu.be/EtvZwyuh9PA?si=yKb_Voz9mwulcKSC"><button class="teaser"><i class="fa-solid fa-play"></i> 
+                ASSITIR AO TEASER</button></a>
 
             <div class="contador">
-                            
-            <div>
-                <h1 id="dias"></h1>
-                <p>DIAS</p>
-            </div>
-            
-            <div>
-                <h1 id="horas"></h1>
-                <p>HORAS</p>
-            </div>
-            
-            <div>
-                <h1 id="minutos"></h1>
-                <p>MINUTOS</p>
-            </div>
-            
-            <div>
-                <h1 id="segundos"></h1>
-                <p>SEGUNDOS</p>
+
+                <div>
+                    <h1 id="dias"></h1>
+                    <p>DIAS</p>
+                </div>
+
+                <div>
+                    <h1 id="horas"></h1>
+                    <p>HORAS</p>
+                </div>
+
+                <div>
+                    <h1 id="minutos"></h1>
+                    <p>MINUTOS</p>
+                </div>
+
+                <div>
+                    <h1 id="segundos"></h1>
+                    <p>SEGUNDOS</p>
+                </div>
+
             </div>
 
         </div>
-
+    </div>
+        
+    <h2>ELENCO PRINCIPAL</h2>
+        <section class="elenco">
+            <div class="card">
+                <img
+                    src="https://static.wikia.nocookie.net/tron/images/0/07/Jared_Leto_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191538">
+                <h3>JARED LETO</h3>
+                <h4>ARES</h4>
             </div>
-        </div>
-
-        <section>
-            <section class="elenco">
-                <h2>ELENCO PRINCIPAL</h2>
-                <div class="card">
-                    <img src="https://static.wikia.nocookie.net/tron/images/0/07/Jared_Leto_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191538">
-                    <h3>JARED LETO</h3>
-                    <h4>ARES</h4>
-                </div>
-                <div class="card">
-                    <img src="https://static.wikia.nocookie.net/tron/images/4/4e/Greta_Lee_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191035">
-                    <h3>GRETA LEE</h3>
-                    <h4>EVE KIM</h4>
-                </div>
-                <div class="card">
-                    <img src="https://static.wikia.nocookie.net/tron/images/0/0d/Evan_Peters_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191052">
-                    <h3>EVAN PETERS</h3>
-                    <h4>JULIAN DILLINGER</h4>
-                </div>
-                <div class="card">
-                    <img src="https://static.wikia.nocookie.net/tron/images/8/8c/Jodie_Turner-Smith_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191558">
-                    <h3>JODIE TUNER-SMITH</h3>
-                    <h4>ATHENA</h4>
-                </div>
-
-                <h2>TRAILER OFICIAL</h2>
-                <div class="trailer"><iframe width="560" height="315" src="https://www.youtube.com/embed/LJGp3FYxE0U?si=oasLzUCIMaAytIEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            </section>
+            <div class="card">
+                <img
+                    src="https://static.wikia.nocookie.net/tron/images/4/4e/Greta_Lee_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191035">
+                <h3>GRETA LEE</h3>
+                <h4>EVE KIM</h4>
+            </div>
+            <div class="card">
+                <img
+                    src="https://static.wikia.nocookie.net/tron/images/0/0d/Evan_Peters_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191052">
+                <h3>EVAN PETERS</h3>
+                <h4>JULIAN DILLINGER</h4>
+            </div>
+            <div class="card">
+                <img
+                    src="https://static.wikia.nocookie.net/tron/images/8/8c/Jodie_Turner-Smith_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191558">
+                <h3>JODIE TUNER-SMITH</h3>
+                <h4>ATHENA</h4>
+            </div>
+            <div class="card">
+                <img
+                    src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:420,cw:1080,ch:1080,q:80,w:1080/jDeszSP4AWTJUpejyicMSf.png">
+                <h3>JEFF BRIDGES</h3>
+                <h4>KEVIN FLYNN</h4>
+            </div>
+            <div class="card">
+                <img
+                    src="https://static.wikia.nocookie.net/tron/images/1/1a/Gillian_Anderson_Ares_Photoshoot.jpg/revision/latest/scale-to-width-down/1200?cb=20251011191603">
+                <h3>GILLISN ANDERSON</h3>
+                <h4>ELISABETH DILINGER</h4>
+            </div>
 
         </section>
-    </div>
+        <h2>TRAILER OFICIAL</h2>
+        <div class="trailer"><iframe width="560" height="315"
+                src="https://www.youtube.com/embed/LJGp3FYxE0U?si=oasLzUCIMaAytIEY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 
 
 </body>
+
 </html>

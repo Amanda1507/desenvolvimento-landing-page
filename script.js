@@ -8,10 +8,14 @@ const atualizar = (tempo) => {
     const horas = document.getElementById('horas')
     const dias = document.getElementById('dias')
 
-    const qtdSegundos = tempo % 60;
-    const qtdMinutos = Math.floor((tempo % (60 * 60)) / 60);
-    const qtdHoras = Math.floor((tempo % (60 * 60)) / 60);
-    const qtdDias = Math.floor(tempo / (60 * 60 * 24));
+const qtdSegundos = tempo % 60;
+
+const qtdMinutos = Math.floor((tempo % (60 * 60)) / 60);
+
+const qtdHoras = Math.floor((tempo % (60 * 60 * 24)) / (60 * 60));
+
+const qtdDias = Math.floor(tempo / (60 * 60 * 24));
+
     segundos.textContent = formatarDigito(qtdSegundos);
     minutos.textContent = formatarDigito(qtdMinutos);
     horas.textContent = formatarDigito(qtdHoras);
