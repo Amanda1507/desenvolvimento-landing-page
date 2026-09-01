@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Keania+One&display=swap');
 
+:root {
+    --vermelho: rgb(192, 21, 21);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -44,68 +48,80 @@ section {
         background-repeat: no-repeat;
     }
 
-    .navContainer {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nav {
-        background: linear-gradient(180deg, #991212, #4d0707);
-        border-radius: 50px;
-        width: 100vw;
-        max-width: 1000px;
-        height: 45px;
-        margin: 5px 20px auto;
-        padding: 0;
-        gap: 0px;
-        display: flex;
-        align-items: center;
-        list-style: none;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.699);
-        transition: 0.3s ease;
-        overflow: hidden;
-    }
-    
-    .nav:hover {
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-        transform: translateY(-2px);
-    }
-    
-    .nav-item {
-        list-style: none;
-        height: 100%;
-        flex: 1;
-        transition: flex 0.4s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: flex 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    }
+.navContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Expletus Sans", sans-serif;
+}
 
-    .nav-item:hover {
-        flex: 1.5;
-    }
-    
-    .nav-link {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        text-align: center;
-    }
-    
-    .nav-link:hover {
-        background-color: rgba(240, 69, 69, 0.37);
-        color: #000000;
-    }
+.tron img {
+    height: 20px;
+    margin-left: 20px;
 
+}
+    
+.nav {
+    border: solid var(--vermelho);
+    border-radius: 50px;
+    width: 100%; 
+    max-width: 1500px;
+    height: 45px;
+    margin: 5px 20px auto;
+    padding: 0;
+    gap: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.699);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+    
+.nav:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.nav-item {
+    list-style: none;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: flex 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav-item:hover {
+    flex: 1.2;
+}
+    
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+    
+.nav-link:hover {
+    color: var(--vermelho);
+}
+
+.nav-link.active {
+    color: var(--vermelho);
+}
+
+.nav-link.active p {
+    border-bottom: 2px solid;
+}
 
 h3{
     font-size: 20px;
@@ -130,10 +146,6 @@ h3{
     letter-spacing: 5px;
 }
 
-p {
-    font-size: calc(10px + 1vw);
-    margin-top: 10px;
-}
 
 .contador {
     position: absolute;
