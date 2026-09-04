@@ -5,59 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
-
-  <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap">
 </head>
 <body>
-        <div class="navContainer">
-            <ul class="nav">
-                <li class="tron">
-                    <img src="https://image.tmdb.org/t/p/original/9D4TMtxUjYPXqQw4EnuJPmKzucp.png">
-                </li>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Contador</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="evento.html">Sobre o Evento</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Entre em contato</a>
-                </li>
-            </ul>
-        </div>
-
-    <section>
-
-<form action="recebe.php" method="POST" autocomplete="on">
-    <div class="form">
-        <img class="icon" src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" alt="">
-        <input type="text" name="nome" placeholder="Nome Completo" id="nome" autocomplete="name">
+    <div class="navContainer">
+        <ul class="nav">
+            <li class="tron">
+                <img src="https://image.tmdb.org/t/p/original/9D4TMtxUjYPXqQw4EnuJPmKzucp.png" alt="Tron">
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Contador</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="evento.html"><p class="p">Sobre o Evento</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contato.html">Entre em contato</a>
+            </li>
+        </ul>
     </div>
 
-    <div class="form">
-        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-envelope-line-white-icon.png" alt="">
-    <input type="email" name="email" placeholder="E-mail" id="email" autocomplete="email">
-    </div>
+    <main class="main-container">
+        <section>
+            <form action="recebe.php" method="POST" autocomplete="on">
+                <div class="form">
+                    <img class="icon" src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" alt="">
+                    <input type="text" name="nome" placeholder="Nome Completo" id="nome" autocomplete="name">
+                </div>
 
-    <div class="form">
-        <img class="icon" src="https://images.icon-icons.com/3446/PNG/512/security_protection_padlock_lock_icon_219213.png" alt="">
-    <input type="password" name="senha" placeholder="Senha" id="senha" required minlength="5" maxlength="15" autocomplete="new-password">
-    </div>
+                <div class="form">
+                    <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-envelope-line-white-icon.png" alt="">
+                    <input type="email" name="email" placeholder="E-mail" id="email" autocomplete="email">
+                </div>
 
-    <div class="form">
-        <img class="icon" src="https://images.icon-icons.com/3446/PNG/512/security_protection_padlock_lock_icon_219213.png" alt="">
-    <input type="password" name="senha" placeholder="Confirme a senha" id="confirmSenha" required minlength="5" maxlength="15" autocomplete="off">
-    </div>
+                <div class="form">
+                    <img class="icon" src="https://images.icon-icons.com/3446/PNG/512/security_protection_padlock_lock_icon_219213.png" alt="">
+                    <input type="password" name="senha" placeholder="Senha" id="senha" required minlength="5" maxlength="15" autocomplete="new-password">
+                </div>
 
-    <button type="submit">CADASTRAR</button>
+                <div class="form">
+                    <img class="icon" src="https://images.icon-icons.com/3446/PNG/512/security_protection_padlock_lock_icon_219213.png" alt="">
+                    <input type="password" name="confirm_senha" placeholder="Confirme a senha" id="confirmSenha" required minlength="5" maxlength="15" autocomplete="off">
+                </div>
 
-    <p>OU</p>
+                <div class="form-termos">
+                    <input type="checkbox" name="termos" id="termos"> 
+                    <label for="termos">Li e concordo com os <span class="uso">Termos de Uso</span> e aceito receber informações sobre o lançamento</label>
+                </div>
 
-    <button>ENTRAR COM O GOOGLE</button>
+                <button type="submit">CADASTRAR</button>
 
-</form>
-    </section>
+                <p class="ou">OU</p>
 
-
+                <button type="button">ENTRAR COM O GOOGLE</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
