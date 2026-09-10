@@ -7,27 +7,44 @@
     <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap">
 </head>
+
 <body>
+
     <div class="navContainer">
         <ul class="nav">
+
             <li class="tron">
                 <img src="https://image.tmdb.org/t/p/original/9D4TMtxUjYPXqQw4EnuJPmKzucp.png" alt="Tron">
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="evento.html">Sobre o evento</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="cadastro.html">
+                    <p class="p">Cadastro</p>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a href="index.html" class="nav-link">Contador</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="evento.html"><p class="p">Sobre o Evento</p></a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="contato.html">Entre em contato</a>
             </li>
+
         </ul>
     </div>
 
+
     <main class="main-container">
+
         <section>
+
             <form action="recebe.php" method="POST" autocomplete="on">
+
                 <div class="form">
                     <img class="icon" src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" alt="">
                     <input type="text" name="nome" placeholder="Nome Completo" id="nome" autocomplete="name">
@@ -49,17 +66,59 @@
                 </div>
 
                 <div class="form-termos">
-                    <input type="checkbox" name="termos" id="termos"> 
-                    <label for="termos">Li e concordo com os <span class="uso">Termos de Uso</span> e aceito receber informações sobre o lançamento</label>
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">
+                        Li e concordo com os
+                        <span class="uso">Termos de Uso</span>
+                        e aceito receber informações sobre o lançamento
+                    </label>
                 </div>
 
                 <button type="submit">CADASTRAR</button>
 
                 <p class="ou">OU</p>
 
-                <button type="button">ENTRAR COM O GOOGLE</button>
+                <button type="button"><a class="google" href="https://accounts.google.com/v3/signin/identifier?hl=pt-BR&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1797821092:1789039596403219">ENTRAR COM O GOOGLE</a>
+                </button>
+
             </form>
+
         </section>
+
     </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>TRON</span>
+            <small>ARES</small>
+        </div>
+
+        <div class="frase">
+            TRON: Ares. O sistema<br>
+            nunca foi feito para<br>
+            ser quebrado.
+        </div>
+
+        <div class="redes">
+
+            <h3>SIGA-NOS</h3>
+
+            <div class="icones">
+                <a href="#">◎</a>
+                <a href="#">𝕏</a>
+                <a href="#">▶</a>
+                <a href="#">♪</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TRON: Ares. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
 </body>
 </html>
